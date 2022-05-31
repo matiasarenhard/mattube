@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #222;
+}
+
 body {
   background-color: #f9f9f9;
   color: #222;
@@ -46,6 +51,7 @@ header {
   color: white;
   padding: 10px 16px;
   text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
 main {
@@ -154,13 +160,40 @@ main {
   text-align: right;
 }
 .ad {
-  background-color: #ff5722;
   grid-area: ad;
+  margin: 1rem;
+  padding: 4rem;
+  text-align: center;
+  background-color: #2196f3;
+  color: white;
   
 }
 .up-next {
-  background-color: #3f51b5;
   grid-area: up-next;
+  margin: 1rem;
+}
+
+.up-next a {
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  grid-gap: 0.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.up-next img{
+  width: 100%;
+}
+
+.up-next h4 {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.up-next p {
+  color: #888;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -179,6 +212,11 @@ main {
       'video-player video-player ad'
       'video-player video-player up-next'
       'video-info   actions      up-next'
-      'channel      subscribe    up-next';
+      'channel      subscribe    up-next'
+      '.             .           up-next';
+  }
+
+  .video-info{
+    border-bottom: 1px solid #ddd;
   }
 }
