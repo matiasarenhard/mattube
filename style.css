@@ -40,6 +40,14 @@ header {
   text-decoration: none;
 }
 
+.subscribe .button{
+  border: none;
+  background-color: #fb2300;
+  color: white;
+  padding: 10px 16px;
+  text-transform: uppercase;
+}
+
 main {
   margin: auto;
   display: grid;
@@ -139,8 +147,11 @@ main {
 }
 
 .subscribe {
-  background-color: #8bc34a;
   grid-area: subscribe;
+
+  padding: 3rem 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: right;
 }
 .ad {
   background-color: #ff5722;
